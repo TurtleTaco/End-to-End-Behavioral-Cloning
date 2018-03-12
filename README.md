@@ -79,5 +79,21 @@ python video.py run1 --fps 48
 
 Will run the video at 48 FPS. The default FPS is 60.
 
-#### 
+
+
+
+
+#### Model Architecture and Training Strategy
+
+### 1. Architecture and Overfitting
+Several models have been tested through out the training process. The first model is a simple one layer neural network with one perceptron and the second model is adpted from Nvidia [End to End training](https://arxiv.org/pdf/1604.07316.pdf)
+
+The first model however, uses only three center images as input and is overfitted afterwards. This is used to test basic Keras model definition correctness and maskes sure images are loaded corre, ctly.
+
+The second model is the exact End to End model replica with regularization added after the third convolutional layer. "We use strided convolutions in the first three convolutional layers with a 2×2 stride and a 5×5 kernel and a non-strided convolution
+with a 3×3 kernel size in the last two convolutional layers." Overfitting is also addressed through dividing data into 80% training data, 19% validation data and 1% test data. By trying 
+
+<img align="left" src="./README/archi.png">
+
+### 2. 
 
