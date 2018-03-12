@@ -133,5 +133,4 @@ The test accuracy is low however this accuracy is computed by comparing if the p
 ### 5. Video
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=HS3s4Tm9Eo0
 " target="_blank"><img src="https://img.youtube.com/vi/HS3s4Tm9Eo0/0.jpg" 
-alt="Simulation" width="240" height="180" border="10" /></a>
-[Simulation](https://www.youtube.com/watch?v=HS3s4Tm9Eo0)
+alt="Simulation" width="480" height="360" border="10" /></a>
