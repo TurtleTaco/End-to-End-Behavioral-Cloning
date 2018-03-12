@@ -109,6 +109,6 @@ Below are images for center, left and right:
 <img align="left" src="./README/right.jpg" height="130" width="260">
 
 Below are images for recovering driving. As it is shown, center image is actually pointing to the left lane edge indicating the vehicle is makeing a sharp left turn:
-<img align="left" src="./README/center_correction.jpg" height="130" width="260">
-<img align="left" src="./README/left_correction.jpg" height="130" width="260">
-<img align="left" src="./README/right_correction.jpg" height="130" width="260">
+<img align="left" src="./README/center_correct.jpg" height="130" width="260">
+<img align="left" src="./README/left_correct.jpg" height="130" width="260">
+<img align="left" src="./README/right_correct.jpg" height="130" width="260">
