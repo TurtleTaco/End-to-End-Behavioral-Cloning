@@ -102,6 +102,6 @@ Other hyperparameters includes camera correction for left and right images and l
 ### 2. Training data collection
 
 The training data consists of 4 laps of full speed center driving, 1.5 laps of recovering driving (steering left and right rapidly) and around 4000 images on the last right turn lane. The last right turn lane is the most difficult part in the whole training process so additional data is collected on that specific part. To address the issue of left turn more than right turn in the original dataset, all images are flipped left and right and the corresponding steering angle is flipped by multiplying -1. Lastly, left and right cameras are both used with camera correction constant 0.2 which proves to perform the best.
-<img align="left" src="./README/center.png">
-<img align="left" src="./README/left.png">
-<img align="left" src="./README/right.png">
+<img align="left" src="./README/center.jpg">
+<img align="left" src="./README/left.jpg">
+<img align="left" src="./README/right.jpg">
