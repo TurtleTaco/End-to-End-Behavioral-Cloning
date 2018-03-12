@@ -129,3 +129,6 @@ The training process has 5 epoches and the resulting training loss and validatio
 <br/><br/>
 
 The test accuracy is low however this accuracy is computed by comparing if the predictoin is exactly the same as the label. In practice, this is not neccessary because a steering angle with 0.01 degree offset has negligible influence on the actual performance.
+
+### 5. Video
+[Simulation](https://www.youtube.com/watch?v=HS3s4Tm9Eo0)
