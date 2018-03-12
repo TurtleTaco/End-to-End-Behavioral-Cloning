@@ -85,15 +85,20 @@ Will run the video at 48 FPS. The default FPS is 60.
 
 ## Model Architecture and Training Strategy
 
-### 1. Architecture and Overfitting
+### 1. Architecture, Parameter Tuning and Overfitting
 Several models have been tested through out the training process. The first model is a simple one layer neural network with one perceptron and the second model is adpted from Nvidia [End to End training](https://arxiv.org/pdf/1604.07316.pdf)
 
 The first model however, uses only three center images as input and is overfitted afterwards. This is used to test basic Keras model definition correctness and maskes sure images are loaded corre, ctly.
 
 The second model is the exact End to End model replica with regularization added after the third convolutional layer. "We use strided convolutions in the first three convolutional layers with a 2×2 stride and a 5×5 kernel and a non-strided convolution
-with a 3×3 kernel size in the last two convolutional layers." Overfitting is also addressed through dividing data into 80% training data, 19% validation data and 1% test data. By trying 
+with a 3×3 kernel size in the last two convolutional layers." Overfitting is also addressed through dividing data into 80% training data, 19% validation data and 1% test data. By trying different epoch size and observing whether validation loss stopped decreaseing while training loss keeps decrease, epoch of 5 is chosen (early stop) to further address the issue of overfitting.
 
-<img align="left" src="./README/Screen Shot 2018-03-12 at 3.03.35 PM.png">
+Other hyperparameters includes camera correction for left and right images and learning rate. Camera correction of 0.2 is used to produce the best model through trails. Gradient decent is replaced with Adam Optimizer so that learning rate is not chosen manually.
 
-### 2. 
+<img align="left" src="./README/Screen Shot 2018-03-12 at 3.03.35 PM.png", height="600", width="432">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+### 2. Training data collection
+
+The training data consists of 4 laps of full speed center driving, 1.5 laps of correction driving (steering left and right rapidly) and around 4000 images on the last right turn lane. The last right turn lane is the most difficult part in the whole training process so additional data is collected on that specific part. To address the issue of left turn more than right turn in the original dataset, all images are flipped left and right and the corresponding steering angle is flipped by multiplying -1. Lastly, left and right cameras are both used with camera correction constant 0.2 which proves to perform the best.
 
