@@ -95,7 +95,7 @@ with a 3×3 kernel size in the last two convolutional layers." Overfitting is al
 
 Other hyperparameters includes camera correction for left and right images and learning rate. Camera correction of 0.2 is used to produce the best model through trails. Gradient decent is replaced with Adam Optimizer so that learning rate is not chosen manually.
 
-<img align="left" src="./README/net.png", height="600", width="432"></img>
+<img align="left" src="./README/net.png" height="600" width="432"></img>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 ### 2. Training data collection
