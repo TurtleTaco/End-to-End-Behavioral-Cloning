@@ -114,7 +114,7 @@ Below are images for recovering driving. As it is shown, center image is actuall
 <img align="left" src="./README/center_correct.jpg" height="130" width="260">
 <img align="left" src="./README/left_correct.jpg" height="130" width="260">
 <img align="left" src="./README/right_correct.jpg" height="130" width="260">
-
+<br/><br/><br/><br/><br/>
 ### 3. Data summary after augmentation
 
 The total number of images captured is 24,943. Which includes 4,739 validation images (19%), 249 (1%) of test data and 19955 of training data. Every training images are flipped left and right thus creates 2 time the original images. As a result, 39910 images are used for training. (Note: valid and test images have no need to be augmented because the number of each set is considered enough).
@@ -124,7 +124,8 @@ For every epoch, a generator is used to send batches of data to the GPU memory r
 ### 4. Training
 
 The training process has 5 epoches and the resulting training loss and validation loss are as follows:
-<img align="left" src"./README/result.png">
+
+<img align="left" src="./README/result.png">
 <br/><br/>
 
 The test accuracy is low however this accuracy is computed by comparing if the predictoin is exactly the same as the label. In practice, this is not neccessary because a steering angle with 0.01 degree offset has negligible influence on the actual performance.
